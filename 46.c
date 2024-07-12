@@ -1,16 +1,16 @@
 #include<stdio.h>
 
 int main(){
-    int num;
+    float s = 0, d;
+    int j = 1;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
-
-    for(int i = 1; i <= num; i++){
-        if((num%i) == 0){
-            printf("%d \n", i);
-        }
+    for(int i = 1; i <= 7; i+=2){
+        d = (float)i/j;
+        s += d;    
+        j = j*2;
     }
+
+    printf("%f", s);
 
     return 0;
 }
